@@ -53,15 +53,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("speed", Mathf.Abs(rb2d.velocity.x));
 
         float currentSpeed = rb2d.velocity.x;
-        if (rb2d.velocity.x < 0.1f)
-        {
-            currentSpeed = 0;
-            anim.SetFloat("speed", currentSpeed);
-        }
-
-    
-         
-
+   
 
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
